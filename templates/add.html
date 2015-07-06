@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Add</title>
+    <link href='http://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+    <link href="/public/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/style.css"/>
+</head>
+<body>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <form role="form" action="/movies/add" method='post'>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="title" id="title">
+                                <span class="input-group-addon"><span class="glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="director">Director</label>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="director" name="director">
+                                <span class="input-group-addon"><span class="glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Year</label>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="year" id="year">
+                                <span class="input-group-addon"><span class="glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="rating">Rating</label>
+
+                            <div class="input-group">
+                                <select class="form-control" id="rating" name="rating">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <span class="input-group-addon"><span class="glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="poster">Poster URL</label>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="poster" id="poster">
+                                <span class="input-group-addon"><span class="glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+                        <a href="/"><button type="button" class="btn btn-info">Cancel</button></a>
+                        <input type="submit" name="submit" id="submit" value="Add" class="btn btn-info pull-right">
+                    </div>
+                </form>
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="/public/script.js"></script>
+</body>
+</html>
